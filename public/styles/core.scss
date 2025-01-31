@@ -1,0 +1,249 @@
+@use "variables" as *;
+@import '../fonts/icons/style.css';
+@import'../fonts/sdaia/style.css';
+
+
+body {
+  background-color: #f9f9f9;
+ // font-family: $sdaia-font-primary;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a, a:visited, a:active{
+  color: var(--link);
+
+  &:hover{
+    text-decoration:underline;
+  }
+}
+h2 {
+  font-family: $sdaia-font-primary;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+.text-primary {
+  color: var(--text-primary);
+}
+
+.btn{
+  padding: .25rem .45rem;
+  border-radius: .25rem;
+  border-style: solid;
+  border-width: 2px;
+  transition: background-color 0.3s ease-in-out;
+  min-width: 100px;
+
+  &.btn-secondary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-foreground);
+    &:hover{
+      background-color: color-mix(in srgb, var(--primary) 60%, transparent);
+    }
+  }
+
+  &.btn-primary{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--secondary-foreground);
+    &:hover{
+      background-color: color-mix(in srgb, var(--secondary) 60%, transparent);
+    }
+  }
+
+  &.btn-primary-outline{
+    color: var(--secondary);
+    border-color: var(--secondary) ;
+
+    &:hover{
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+
+  &.btn-link{
+    border: 0px;
+    color: var(--link);
+
+    &:hover{
+      color: inherit;
+    }
+  }
+}
+
+.bg-selected {
+  background-color: var(--selected);
+  color: var(--primary-foreground);
+}
+
+.bg-sidebar {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  background-image: url("/img/sidebar-bg.svg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.cpm-avatar {
+  font-family: $sdaia-font-secondary;
+  height: 30px;
+  width: 30px;
+  span {
+    background-color: var(--selected);
+    color: var(--primary-foreground);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+.cpm-page-header {
+  background-image: url("/img/header-bg.svg");
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  border:1px solid;
+  border-color: #EEEEEE;
+
+  .cpm-quick-links {
+    display: flex;
+    justify-content: start;
+    gap: 80px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        .icon-wraper {
+            background-color: var(--selected-light);
+          
+        }
+      }
+      .icon-wraper {
+        font-size: 2rem;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        border: .10rem solid;
+        border-color: var(--secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s;
+      }
+    }
+  }
+}
+
+.cpm-box-container{
+  background-color: #fff;
+  padding: 10px;
+  border:1px solid;
+  border-color: #EEEEEE;
+}
+
+.cpm-sidebar {
+  ul {
+    li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      a {
+        font-family: $sdaia-font-secondary;
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+.cpm-right-nav{
+  ul{
+    li{
+      .btn-link{
+        min-width: inherit !important;
+        outline: none !important;
+      }
+    }
+  }
+}
+
+.cpm-notification{
+  max-height: 350px;
+  overflow-x: hidden;
+  overflow-y: auto;
+    li{
+      border-bottom: 1px solid var(--selected);
+      margin-bottom: 5px ;
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
+}
+i.org {
+  color: var(--orgnaztion);
+}
+i.tenant {
+  color: var(--tenant);
+}
+i.group {
+  color: var(--group);
+}
+i.user {
+  color:  var(--user);
+}
+
+.cpm-org-counters {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 80px;
+  .counters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .number {
+      font-size: 1.25rem;
+      margin: 10px;
+      font-weight: 500;
+    }
+    .counters-name {
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+  }
+}
+
+
+.cpm-tags{
+  background-color: var(--selected-light);
+  border-radius: 10px;
+  padding: 2px 5px;
+  text-align: center;
+  display: inline-flex;
+}
+
+
+input[type="text"], input[type="password"], input[type="email"], input[type="submit"], textarea, select {
+
+&:focus{
+  border-color: var(--selected);
+  outline: none; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+}
+
+input[type="checkbox"]:checked {
+  accent-color:  var(--secondary);
+  color: #EEEEEE;
+  &::before {
+    color: #EEEEEE; 
+  }
+}

@@ -1,0 +1,21 @@
+
+
+$sdaia-font-primary:'DiodrumArabic';
+$sdaia-font-secondary: Helvetica, sans-serif;
+
+:root{
+    --primary:hsl(210, 65%, 22%); //Tailwind colour cyan-900
+    --primary-foreground: hsl(0, 0%, 100%);
+    --text-primary:var(--primary);
+    --secondary:hsl(237, 26%, 50%); // check box foucs on inputs
+    --secondary-hover:hsl(236, 38%, 51%);
+    --secondary-foreground:var(--primary-foreground);
+    --selected:hsl(190, 83%, 45%);//as for tabs selected , check box foucs on inputs
+    --selected-light:#E3EEFA;//as for badges tags
+    --link:#2679D8;
+    --orgnaztion: #fea646;
+    --tenant:#6459a7;
+    --group:#a7599d;
+    --user:#eb1354;     
+
+}

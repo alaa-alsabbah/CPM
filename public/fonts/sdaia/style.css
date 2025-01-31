@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'DiodrumArabic';
+    src: url('DiodrumArabic-Semibold.eot');
+    src: url('DiodrumArabic-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('DiodrumArabic-Semibold.woff2') format('woff2'),
+        url('DiodrumArabic-Semibold.woff') format('woff'),
+        url('DiodrumArabic-Semibold.ttf') format('truetype'),
+        url('DiodrumArabic-Semibold.svg#DiodrumArabic-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DiodrumArabic';
+    src: url('DiodrumArabic-Medium.eot');
+    src: url('DiodrumArabic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('DiodrumArabic-Medium.woff2') format('woff2'),
+        url('DiodrumArabic-Medium.woff') format('woff'),
+        url('DiodrumArabic-Medium.ttf') format('truetype'),
+        url('DiodrumArabic-Medium.svg#DiodrumArabic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DiodrumArabic';
+    src: url('DiodrumArabic-Extralight.eot');
+    src: url('DiodrumArabic-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('DiodrumArabic-Extralight.woff2') format('woff2'),
+        url('DiodrumArabic-Extralight.woff') format('woff'),
+        url('DiodrumArabic-Extralight.ttf') format('truetype'),
+        url('DiodrumArabic-Extralight.svg#DiodrumArabic-Extralight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DiodrumArabic';
+    src: url('DiodrumArabic-Bold.eot');
+    src: url('DiodrumArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DiodrumArabic-Bold.woff2') format('woff2'),
+        url('DiodrumArabic-Bold.woff') format('woff'),
+        url('DiodrumArabic-Bold.ttf') format('truetype'),
+        url('DiodrumArabic-Bold.svg#DiodrumArabic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DiodrumArabic';
+    src: url('DiodrumArabic-Regular.eot');
+    src: url('DiodrumArabic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DiodrumArabic-Regular.woff2') format('woff2'),
+        url('DiodrumArabic-Regular.woff') format('woff'),
+        url('DiodrumArabic-Regular.ttf') format('truetype'),
+        url('DiodrumArabic-Regular.svg#DiodrumArabic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DiodrumArabic';
+    src: url('DiodrumArabic-Light.eot');
+    src: url('DiodrumArabic-Light.eot?#iefix') format('embedded-opentype'),
+        url('DiodrumArabic-Light.woff2') format('woff2'),
+        url('DiodrumArabic-Light.woff') format('woff'),
+        url('DiodrumArabic-Light.ttf') format('truetype'),
+        url('DiodrumArabic-Light.svg#DiodrumArabic-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
